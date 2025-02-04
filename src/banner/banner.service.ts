@@ -1,6 +1,6 @@
 // src/banner/banner.service.ts
 import { Injectable } from '@nestjs/common';
-import { PrismaService } from '@/prisma/prisma.service';
+import { PrismaService } from '../prisma/prisma.service';
 import { VOUtils } from 'utils/voUtils';
 
 @Injectable()
