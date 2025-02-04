@@ -9,6 +9,7 @@ async function bootstrap() {
     origin: 'https://game.micromatrix.org',
     credentials: true, // 允许发送 Cookie
   });
-  await app.listen(7000);
+  const port = process.env.PORT || 7000; // 使用 Vercel 提供的端口，或者如果本地运行时使用 7000
+  await app.listen(port);
 }
 bootstrap();
