@@ -8,7 +8,7 @@ import {
   Delete,
   Put,
 } from '@nestjs/common';
-import { BannerService } from '@/banner/banner.service';
+import { BannerService } from './banner.service';
 
 @Controller('banners')
 export class BannerController {
