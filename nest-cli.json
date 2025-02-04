@@ -9,6 +9,14 @@
       {
         "include": "../romFile/**/*",
         "outDir": "dist/romFile"
+      },
+      {
+        "include": "../db/**/*",
+        "outDir": "dist/db"
+      },
+      {
+        "include": "../prisma/**/*",
+        "outDir": "dist/prisma"
       }
     ],
     "deleteOutDir": true
