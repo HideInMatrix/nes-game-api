@@ -9,14 +9,31 @@ generator client {
 }
 
 datasource db {
-  provider  = "postgresql"
-  url       = env("POSTGRES_PRISMA_URL")
-  directUrl = env("POSTGRES_URL_NON_POOLING") // uses a direct connection
+  provider = "sqlite"
+  url      = "file:../db/nes.sqlite3"
 }
 
-model User {
-  id       Int     @id @default(autoincrement())
-  email    String  @unique
-  name     String?
-  password String
+model Rom {
+  id        Int    @id @default(autoincrement())
+  title     String @default("")
+  cover     String @default("")
+  image     String @default("")
+  language  String @default("")
+  type      String @default("")
+  source    String @default("")
+  comment   String @default("")
+  location  String @default("")
+  size      String @default("")
+  publisher String @default("")
+  url       String @default("")
+}
+
+model Category {
+  id   String @id
+  name String
+}
+
+model Banner {
+  id    Int     @id @default(autoincrement())
+  title String?
 }
