@@ -1,5 +1,5 @@
 // 返回给调用者的视图结构
-import { ResultVO } from '../src/vo/result.vo';
+import { ResultVO } from '@/vo/result.vo';
 
 export class VOUtils {
   public static success<T>(data?: T): ResultVO<T> {
