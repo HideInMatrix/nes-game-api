@@ -1,7 +1,7 @@
 // src/category/category.service.ts
 import { Injectable } from '@nestjs/common';
 import { PrismaService } from '@/prisma/prisma.service';
-import { VOUtils } from 'utils/voUtils';
+import { VOUtils } from '@/utils/voUtils';
 
 @Injectable()
 export class CategoryService {
