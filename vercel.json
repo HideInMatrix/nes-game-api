@@ -2,12 +2,19 @@
   "version": 2,
   "name": "game-api",
 
+  "builds": [
+    {
+      "src": "dist/main.js",
+      "use": "@vercel/node"
+    }
+  ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "src/main.js"
+      "dest": "dist/main.js"
     }
   ],
+
   "build": {
     "env": {
       "TS_NODE_TRANSPILE_ONLY": "true"
