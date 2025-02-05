@@ -3,14 +3,22 @@
   "name": "game-api",
   "builds": [
     {
-      "src": "dist/main.js",
+      "src": "src/main.ts",
       "use": "@vercel/node"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "src/main.js"
+      "dest": "dist/main.js"
     }
-  ]
+  ],
+  "build": {
+    "env": {
+      "TS_NODE_TRANSPILE_ONLY": "true"
+    },
+    "commands": {
+      "build": "pnpm run build"
+    }
+  }
 }
