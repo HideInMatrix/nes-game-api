@@ -3,7 +3,7 @@ import { Controller, Get, Post, Body, Param, Query, Res } from '@nestjs/common';
 import { RomService } from './rom.service';
 import { Response } from 'express';
 import { join } from 'path';
-import { VOUtils } from 'utils/voUtils';
+import { VOUtils } from '@/utils/voUtils';
 
 @Controller('roms')
 export class RomController {
@@ -64,8 +64,13 @@ export class RomController {
     @Query('categoryId') categoryId: string, // 获取查询参数 categoryId
     @Query('page') page: number = 0, // 默认页码为 0
     @Query('pageSize') pageSize: number = 10, // 默认每页显示 10 个游戏
-    @Query("keyword") keyword:string
+    @Query('keyword') keyword: string,
   ) {
-    return this.romService.getGamesByCategoryId(categoryId, page, pageSize,keyword);
+    return this.romService.getGamesByCategoryId(
+      categoryId,
+      page,
+      pageSize,
+      keyword,
+    );
   }
 }

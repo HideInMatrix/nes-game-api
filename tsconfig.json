@@ -9,7 +9,7 @@
     "target": "ES2021",
     "sourceMap": true,
     "outDir": "./dist", // 编译后的文件存放目录
-    "rootDir": "./src", // 代码的根目录
+    "rootDir": "./", // 代码的根目录
     "baseUrl": "./",
     "incremental": true,
     "skipLibCheck": true,
