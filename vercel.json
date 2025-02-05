@@ -1,5 +1,6 @@
 {
   "version": 2,
+  "name": "game-api",
   "builds": [
     {
       "src": "dist/src/main.js",
