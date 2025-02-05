@@ -3,7 +3,7 @@
   "name": "game-api",
   "builds": [
     {
-      "src": "dist/src/main.js",
+      "src": "src/main",
       "use": "@vercel/node"
     }
   ],
