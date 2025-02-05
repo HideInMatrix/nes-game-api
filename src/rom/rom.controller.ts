@@ -3,7 +3,7 @@ import { Controller, Get, Post, Body, Param, Query, Res } from '@nestjs/common';
 import { RomService } from './rom.service';
 import { Response } from 'express';
 import { join } from 'path';
-import { VOUtils } from '@/utils/voUtils';
+import { VOUtils } from 'utils/voUtils';
 
 @Controller('roms')
 export class RomController {

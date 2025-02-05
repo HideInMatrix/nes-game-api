@@ -1,16 +1,10 @@
 {
   "version": 2,
   "name": "game-api",
-  "builds": [
-    {
-      "src": "src/main",
-      "use": "@vercel/node"
-    }
-  ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "dist/src/main.js"
+      "dest": "src/main.js"
     }
   ]
 }
