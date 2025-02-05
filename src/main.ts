@@ -10,6 +10,6 @@ async function bootstrap() {
     credentials: true, // 允许发送 Cookie
   });
   const port = process.env.PORT || 7000; // 使用 Vercel 提供的端口，或者如果本地运行时使用 7000
-  await app.listen(port);
+  app.listen(port);
 }
 bootstrap();
